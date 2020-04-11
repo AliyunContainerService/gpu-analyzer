@@ -10,6 +10,6 @@ gitHash="github.com/AliyunContainerService/gpu-analyzer/app/version.GitSHA=${GIT
 go_ldflags="-X ${gitHash}"
 
 echo "building ${GIT_SHA}..."
-go build -ldflags "$go_ldflags" -o gpu-analyzer ./app/gpu-analyzer/main.go
+go build -ldflags "$go_ldflags" -o gpu-analyzer ./app/kubectl-suggest-gpumem/main.go
 
 echo "build finished"
